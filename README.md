@@ -24,8 +24,8 @@ iex> ReactivehubSdkElixir.build_config('<team-name>', '<client-key>', '<client-s
 In ```PublishEvent``` the first parameter is the ```Name``` of the [Event](https://docs.reactivehub.io/guide/events) and the second parameter is the ```Payload``` that should be passed as a ```String```
 
 ```
-iex> ReactivehubSdkElixir.publish_event('<team-name>', '<client-key>', '<client-secret>')
-
+iex> ReactivehubSdkElixir.publish_event(<config>, '<event-name>', payload)
+:ok
 ```
 
 ## How to contribute
