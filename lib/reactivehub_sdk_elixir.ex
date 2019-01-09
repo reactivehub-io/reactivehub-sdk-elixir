@@ -21,8 +21,8 @@ defmodule ReactivehubSdkElixir do
 
   ## Examples
 
-      iex> ReactivehubSdkElixir.publish_event('<team-name>', '<client-key>', '<client-secret>')
-      %{team_name: '<team_name>', client_key: '<client_key>', client_secret: '<client_secret>'}
+      iex> ReactivehubSdkElixir.publish_event(<config>, '<event-name>', payload)
+      :ok
 
   """
   def publish_event(config, event_name, payload) do
